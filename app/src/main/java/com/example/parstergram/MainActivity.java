@@ -144,9 +144,17 @@ public class MainActivity extends AppCompatActivity {
                 Log.i(TAG, "Post save was successful!");
                 etDescription.setText("");
                 ivPostImage.setImageResource(0);
+                // show in timeline
+                //goTimelineActivity();
             }
         });
     }
+
+//    private void goTimelineActivity() {
+//        Intent i = new Intent(this, TimelineActivity.class);
+//        startActivity(i);
+//        //finish();
+//    }
 
     private void queryPosts() {
         // Specify which class to query
